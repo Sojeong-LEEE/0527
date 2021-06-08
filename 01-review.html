@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>js review</title>
+<link rel="stylesheet" href="css">
+<script defer>
+    console.log('>>> head >>>');
+</script>
+<link rel="stylesheet" href="./js">
+</head>
+<body>
+
+    <script defer>
+        console.log('>>> body start >>>');
+    </script>
+    <link rel="stylesheet" href="./js">
+
+    <button onmouseover="alert('mouse over');">mouse over</button>
+
+    <script>
+        console.log('>>> body end >>>'); /* 여기가 베이스 시작 */
+    </script>
+    <link rel="stylesheet" href="./js">
+
+    line
+    date > 5가지
+    
+    <script>
+        console.log(123);
+        console.log('123'); /* 정수, 소수 */
+        console.log(1 >= 2);/* true, false */
+        console.log(null); /* 의도적인 없음을 표현 */
+        console.log(undefined); /* 시스템에서 없다는 결과를 표현할때 사용 */
+        console.log(10 % 3); /* 나머지 연산 */
+        console.log(" test\test ");
+        console.log(` test"test `);
+        console.log("20" + "21"); /* 2021 */
+        console.log(Number("20") + Number("21")); /* 41 */
+        
+        /* =은 같다
+        프로그래밍에서는 대입한다 */
+        /* a = (1 + 123) / (123 * 123); */
+        123 == 123 /* 너희 둘이 값이 같냐? 동등비교 */
+        123 != 123 /* ! = not 틀리냐? 부등비교 */
+
+    
+        
+    </script>
+</body>
+</html>

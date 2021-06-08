@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>parameter</title>
+</head>
+<body>
+
+    <script>
+        function sayHello(name) {
+            console.log (name);
+            console.log ("안녕하세요" + name + "입니다")
+        }
+        sayHello("애기");
+
+        function getTwice(param) {
+            console.log (param * param);
+        }
+        getTwice(200);
+
+        function sing(singer) {
+            console.log("가수:" + singer);
+            console.log("lorem");
+        }
+        sing("bts");
+
+        /* 커피값 계산하는 함수 */
+        function cafeCalcul(cups){
+            var americano = 4500;
+            console.log(americano * cups);
+        }
+        cafeCalcul(5);
+
+        function exchang(usd) {
+            var wonPrice = 1150;
+            var result = wonPrice * usd;
+            console.log(result + "원 입니다");
+        }
+        exchang(1000);
+
+        /* kb to mb */
+        function kbToMega(kb) {
+            /* 실행문
+            1mb = 1024kb
+            1 / 1024mb = 1kb
+            45773 / 1024mb = 45773kb */
+            console.log(kb/1024);
+        }
+        kbToMega(45773);
+
+        function teraToGiga(teraData) {
+            /* 1TB = 1024GB
+            3TB = 3 * 1024GB */
+            var result = teraData * 1024;
+            console.log(teraData + "TB는");
+            console.log(result + "GB 입니다");
+        }
+        teraToGiga(7);
+
+        function teraToMega(teraData){
+            /* 1024GB = 1024 * 1024MB
+            1TB = 1024GB
+            1TB = 1024 * 1024MB
+            7 * 1TB = 7 * 1024 *1024MB */
+            var result = 1024 * 1024;
+
+            console.log(teraData + "TB는");
+            console.log(result + "MB 입니다");
+        }
+        teraToMega(25);
+    </script>
+</body>
+</html>
